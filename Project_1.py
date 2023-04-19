@@ -176,7 +176,7 @@ if __name__=="__main__":
                 print(secq_of_words_with_same_prefix)
             
             
-
+        #programs quits when ctrl+c is pressed.
         except KeyboardInterrupt :
             print()
             print("-"*25)
@@ -184,13 +184,15 @@ if __name__=="__main__":
             print("-"*25)
             break
 
-            
+        #program quits when ctrl + z + return is pressed.
         except EOFError:
             print("-"*25)
             print("Program Aborted.") 
             print("-"*25)
             break
 
+        #when invalid input is given program
+        #display the below.
         except ValueError:
             print()
             print("!!!Pls enter valid prefix!!!")
